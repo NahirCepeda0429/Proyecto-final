@@ -4,11 +4,25 @@
   "description": "proyecto sass",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "keywords": [
     "developer"
   ],
   "author": "Nahir Cepeda",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NahirCepeda0429/Proyecto-final.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NahirCepeda0429/Proyecto-final/issues"
+  },
+  "homepage": "https://github.com/NahirCepeda0429/Proyecto-final#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
 }
